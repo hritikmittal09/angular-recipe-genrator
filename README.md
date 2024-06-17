@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Project Description
+I recently developed and deployed a Random Recipe Generator using Angular! This project allows users to discover new and exciting recipes with just a click. Leveraging Angular's powerful features, the application dynamically fetches and displays random recipes from a curated collection.
+
+
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
