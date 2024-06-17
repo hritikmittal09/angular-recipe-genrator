@@ -1,0 +1,22 @@
+<h3>shopping_list</h3>
+
+<form class=""#ingredientsForm= "ngForm" (ngSubmit)="submit(ingredientsForm)">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label text-center">Add Ingredients</label>
+    <input type="text" class="form-control" id="Ingredients" aria-describedby="emailHelp " #ingredient required ngModel name="InputBoxIngredient" #IngredientInputBox = ngModel>
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <small *ngIf="IngredientInputBox.value == '' && IngredientInputBox.touched">This felid is required</small>
+  <div class="button-center d-flex justify-content-center p-5">
+  <button type="submit" class="btn btn-primary m-3 center-vertical" [disabled]="!ingredientsForm.valid">Add Ingredients</button>
+  </div>
+</form>
+
+
+<ul *ngFor="let item of ingredients" class="list-group">
+    <li class="list-group-item">{{item}}</li>
+    
+    
+    
+    
+  </ul>

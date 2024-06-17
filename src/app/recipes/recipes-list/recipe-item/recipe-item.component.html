@@ -1,0 +1,10 @@
+<mat-card>
+  <!-- Your card content goes here -->
+  <img mat-card-image src="{{Recipe_item.strMealThumb}}" style="margin-top: 10px; max-width: 100%;"  alt="Image Alt Text" class="medium-image">
+  <mat-card-content>
+    <h3 class="mat-bold mat title">{{Recipe_item.strMeal}}</h3>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" (click)="RecipeItem_sected(Recipe_item)">Show Details of recipe</button>
+  </mat-card-actions>
+</mat-card>

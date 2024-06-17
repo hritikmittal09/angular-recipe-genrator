@@ -1,0 +1,11 @@
+
+
+<div class="container">
+    <ul *ngFor="let i of recipes.meals"  class="list-group">
+
+      <app-recipe-item [Recipe_item]="i"  ></app-recipe-item>
+      
+      
+    </ul>
+  </div>
+  <button mat-raised-button color="primary" style="margin: 50px;" (click)="anotherRecipe()">Show Another Recipe </button>

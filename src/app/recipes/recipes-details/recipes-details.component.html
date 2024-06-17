@@ -1,0 +1,44 @@
+<div class="container m-5">
+    <div class="row">
+      
+      <div class="noDetails"*ngIf="noDetaits">
+        <h2>Please click on Show Details Button
+        </h2>
+      </div>
+      <div class="col" *ngIf="!noDetaits">
+        <h2 class="m-3">{{Set_recipe.strMeal}}</h2>
+         <h4 >{{Set_recipe.strArea}}</h4>
+        <p class="m-3">{{Set_recipe.strInstructions}}</p>
+        <h4 class="mat-title">Recipe link</h4>
+        <p><a href="{{Set_recipe.strYoutube}}" target="_blank" class="link-underline-primary">{{Set_recipe.strYoutube}}</a></p>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        View Ingredients
+        </button>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Ingredients</li>
+            <li *ngFor="let i of [2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]" class="list-group-item">{{ Set_recipe['strIngredient' + i] }}</li>
+            
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
